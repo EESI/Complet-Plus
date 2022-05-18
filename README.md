@@ -11,11 +11,11 @@ Complet+ was developed with the following software:
 - MMseqs2=Release 13-45111
 
 ## Data requirement
-1. clustering.tsv example
+1. clusterResults.tsv example
 
 The clustering results file format requires that each cluster have a representative sequence.
 
-Please note that the actual clustering.tsv file itself should not have headers.
+Please note that the actual clusterResults.tsv file itself should not have headers.
 
 | Representative sequence  | Sequence |
 | ------------- | ------------- |
@@ -39,4 +39,16 @@ wskaggsaeeigaealgrmle
 ```
 
 ## Tutorial
+Complet+ is run via the command line.
 
+The required arguments are the clustering results file that the user wishes to run Complet+ on, the FASTA file of sequences, and the name of the new clustering results file that Complet+ will make. The user may also specify the options they wish to run MMseqs2's search with, as a string.
+
+```
+completplus.sh <i:clusterResults.tsv> <i:sequences.fasta> <o:newClusteringResults.tsv> [options]
+```
+
+Below is an example of running Complet+ with a MMseqs2 search sensitivity of 1, singlethreaded:
+
+```
+completplus.sh defaultClusters.tsv allSeqs.fasta completPClusters.tsv "-s 7.5 --threads 1"
+```
