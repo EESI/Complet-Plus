@@ -6,7 +6,7 @@ Maintainer: Rachel Nguyen, rtn280 at dragons dot drexel dot edu
 Owner: Gail Rosen, gailr at ece dot drexel dot edu
 
 ## Dependencies
-Thw following are required:
+Complet+ was developed with the following software:
 - python=3.9
 - MMseqs2=Release 13-45111
 
