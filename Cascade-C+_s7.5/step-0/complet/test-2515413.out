@@ -1,0 +1,205 @@
+
+
+Cluster results file: step-0.tsv
+Sequences file: ../flat-astral-2.08.fa
+Merged cluster output file: complet-step-0.tsv
+Options: -s 7.5
+
+
+createdb rep-seqs.fasta /ifs/groups/rosenMRIGrp/rtn28/scripts/partition-tests/scope/partitions-0/mmseqs-output/repsDB 
+
+MMseqs Version:       	13.45111
+Database type         	0
+Shuffle input database	true
+Createdb mode         	0
+Write lookup file     	1
+Offset of numeric ids 	0
+Compressed            	0
+Verbosity             	3
+
+Converting sequences
+[
+Time for merging to repsDB_h: 0h 0m 0s 180ms
+Time for merging to repsDB: 0h 0m 0s 182ms
+Database type: Aminoacid
+Time for processing: 0h 0m 0s 771ms
+search /ifs/groups/rosenMRIGrp/rtn28/scripts/partition-tests/scope/partitions-0/mmseqs-output/repsDB /ifs/groups/rosenMRIGrp/rtn28/scripts/partition-tests/scope/partitions-0/mmseqs-output/repsDB /ifs/groups/rosenMRIGrp/rtn28/scripts/partition-tests/scope/partitions-0/mmseqs-output/searchDB /ifs/groups/rosenMRIGrp/rtn28/scripts/partition-tests/scope/partitions-0/mmseqs-output/tmp -s 7.5 
+
+MMseqs Version:                        	13.45111
+Substitution matrix                    	nucl:nucleotide.out,aa:blosum62.out
+Add backtrace                          	false
+Alignment mode                         	2
+Alignment mode                         	0
+Allow wrapped scoring                  	false
+E-value threshold                      	0.001
+Seq. id. threshold                     	0
+Min alignment length                   	0
+Seq. id. mode                          	0
+Alternative alignments                 	0
+Coverage threshold                     	0
+Coverage mode                          	0
+Max sequence length                    	65535
+Compositional bias                     	1
+Max reject                             	2147483647
+Max accept                             	2147483647
+Include identical seq. id.             	false
+Preload mode                           	0
+Pseudo count a                         	1
+Pseudo count b                         	1.5
+Score bias                             	0
+Realign hits                           	false
+Realign score bias                     	-0.2
+Realign max seqs                       	2147483647
+Gap open cost                          	nucl:5,aa:11
+Gap extension cost                     	nucl:2,aa:1
+Zdrop                                  	40
+Threads                                	48
+Compressed                             	0
+Verbosity                              	3
+Seed substitution matrix               	nucl:nucleotide.out,aa:VTML80.out
+Sensitivity                            	7.5
+k-mer length                           	0
+k-score                                	2147483647
+Alphabet size                          	nucl:5,aa:21
+Max results per query                  	300
+Split database                         	0
+Split mode                             	2
+Split memory limit                     	0
+Diagonal scoring                       	true
+Exact k-mer matching                   	0
+Mask residues                          	1
+Mask lower case residues               	0
+Minimum diagonal score                 	15
+Spaced k-mers                          	1
+Spaced k-mer pattern                   	
+Local temporary path                   	
+Rescore mode                           	0
+Remove hits by seq. id. and coverage   	false
+Sort results                           	0
+Mask profile                           	1
+Profile E-value threshold              	0.1
+Global sequence weighting              	false
+Allow deletions                        	false
+Filter MSA                             	1
+Maximum seq. id. threshold             	0.9
+Minimum seq. id.                       	0
+Minimum score per column               	-20
+Minimum coverage                       	0
+Select N most diverse seqs             	1000
+Min codons in orf                      	30
+Max codons in length                   	32734
+Max orf gaps                           	2147483647
+Contig start mode                      	2
+Contig end mode                        	2
+Orf start mode                         	1
+Forward frames                         	1,2,3
+Reverse frames                         	1,2,3
+Translation table                      	1
+Translate orf                          	0
+Use all table starts                   	false
+Offset of numeric ids                  	0
+Create lookup                          	0
+Add orf stop                           	false
+Overlap between sequences              	0
+Sequence split mode                    	1
+Header split mode                      	0
+Chain overlapping alignments           	0
+Merge query                            	1
+Search type                            	0
+Search iterations                      	1
+Start sensitivity                      	4
+Search steps                           	1
+Exhaustive search mode                 	false
+Filter results during exhaustive search	0
+Strand selection                       	1
+LCA search mode                        	false
+Disk space limit                       	0
+MPI runner                             	
+Force restart with latest tmp          	false
+Remove temporary files                 	false
+
+prefilter /ifs/groups/rosenMRIGrp/rtn28/scripts/partition-tests/scope/partitions-0/mmseqs-output/repsDB /ifs/groups/rosenMRIGrp/rtn28/scripts/partition-tests/scope/partitions-0/mmseqs-output/repsDB /ifs/groups/rosenMRIGrp/rtn28/scripts/partition-tests/scope/partitions-0/mmseqs-output/tmp/18231990930535887365/pref_0 --sub-mat nucl:nucleotide.out,aa:blosum62.out --seed-sub-mat nucl:nucleotide.out,aa:VTML80.out -k 0 --k-score 2147483647 --alph-size nucl:5,aa:21 --max-seq-len 65535 --max-seqs 300 --split 0 --split-mode 2 --split-memory-limit 0 -c 0 --cov-mode 0 --comp-bias-corr 1 --diag-score 1 --exact-kmer-matching 0 --mask 1 --mask-lower-case 0 --min-ungapped-score 15 --add-self-matches 0 --spaced-kmer-mode 1 --db-load-mode 0 --pca 1 --pcb 1.5 --threads 48 --compressed 0 -v 3 -s 7.5 
+
+Query database size: 9538 type: Aminoacid
+Estimated memory consumption: 1009M
+Target database size: 9538 type: Aminoacid
+Index table k-mer threshold: 96 at k-mer size 6 
+Index table: counting k-mers
+[=================================================================] 9.54K 0s 305ms
+Index table: Masked residues: 8877
+Index table: fill
+[=================================================================] 9.54K 0s 293ms
+Index statistics
+Entries:          1471588
+DB size:          496 MB
+Avg k-mer size:   0.022994
+Top 10 k-mers
+    AALAEA	6
+    AEAALA	6
+    ALARLE	6
+    AAAAAG	6
+    ELALLG	6
+    LLGPGK	6
+    EAALAL	6
+    ALELAR	6
+    LRARLA	5
+    AGLATA	5
+Time for index table init: 0h 0m 0s 998ms
+Process prefiltering step 1 of 1
+
+k-mer similarity threshold: 96
+Starting prefiltering scores calculation (step 1 of 1)
+Query db start 1 to 9538
+Target db start 1 to 9538
+[=================================================================] 9.54K 1m 4s 772ms
+
+1669.073702 k-mers per position
+6841 DB matches per sequence
+0 overflows
+0 queries produce too many hits (truncated result)
+108 sequences passed prefiltering per query sequence
+89 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref_0: 0h 0m 0s 169ms
+Time for processing: 0h 1m 8s 602ms
+align /ifs/groups/rosenMRIGrp/rtn28/scripts/partition-tests/scope/partitions-0/mmseqs-output/repsDB /ifs/groups/rosenMRIGrp/rtn28/scripts/partition-tests/scope/partitions-0/mmseqs-output/repsDB /ifs/groups/rosenMRIGrp/rtn28/scripts/partition-tests/scope/partitions-0/mmseqs-output/tmp/18231990930535887365/pref_0 /ifs/groups/rosenMRIGrp/rtn28/scripts/partition-tests/scope/partitions-0/mmseqs-output/searchDB --sub-mat nucl:nucleotide.out,aa:blosum62.out -a 0 --alignment-mode 2 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca 1 --pcb 1.5 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --gap-open nucl:5,aa:11 --gap-extend nucl:2,aa:1 --zdrop 40 --threads 48 --compressed 0 -v 3 
+
+Compute score and coverage
+Query database size: 9538 type: Aminoacid
+Target database size: 9538 type: Aminoacid
+Calculation of alignments
+[=================================================================] 9.54K 11s 785ms
+Time for merging to searchDB: 0h 0m 0s 163ms
+1030362 alignments calculated
+16811 sequence pairs passed the thresholds (0.016316 of overall calculated)
+1.762529 hits per query sequence
+Time for processing: 0h 0m 12s 201ms
+convertalis /ifs/groups/rosenMRIGrp/rtn28/scripts/partition-tests/scope/partitions-0/mmseqs-output/repsDB /ifs/groups/rosenMRIGrp/rtn28/scripts/partition-tests/scope/partitions-0/mmseqs-output/repsDB /ifs/groups/rosenMRIGrp/rtn28/scripts/partition-tests/scope/partitions-0/mmseqs-output/searchDB search.tsv 
+
+MMseqs Version:        	13.45111
+Substitution matrix    	nucl:nucleotide.out,aa:blosum62.out
+Alignment format       	0
+Format alignment output	query,target,fident,alnlen,mismatch,gapopen,qstart,qend,tstart,tend,evalue,bits
+Translation table      	1
+Gap open cost          	nucl:5,aa:11
+Gap extension cost     	nucl:2,aa:1
+Database output        	false
+Preload mode           	0
+Search type            	0
+Threads                	48
+Compressed             	0
+Verbosity              	3
+
+[=================================================================] 9.54K 0s 32ms
+Time for merging to search.tsv: 0h 0m 0s 200ms
+Time for processing: 0h 0m 0s 380ms
+
+Times:Extract representatives: 26s.
+Representatives DB: 1s.
+Search: 81s.
+Output conversion: 0s.
+Find reciprocal hits: 0s.
+Relabel sequences: 1s.
+Full time: 109s.
+
+

@@ -1,0 +1,492 @@
+'step-0.fasta' -> '/beegfs/scratch/2467315/rtn28/step-0.fasta'
+
+
+Directory: step-0/
+Initial sequences: step-0.fasta
+Options:
+
+
+BEEGFS working directory:
+/beegfs/scratch/2467315/rtn28
+total 88289
+-rw-rw-r-- 1 rtn28 rtn28 90407678 Mar 18 13:45 step-0.fasta
+
+
+createdb /beegfs/scratch/2467315/rtn28/step-0.fasta /beegfs/scratch/2467315/rtn28/step-0/step-0-DB 
+
+MMseqs Version:       	13.45111
+Database type         	0
+Shuffle input database	true
+Createdb mode         	0
+Write lookup file     	1
+Offset of numeric ids 	0
+Compressed            	0
+Verbosity             	3
+
+Converting sequences
+[==============================
+Time for merging to step-0-DB_h: 0h 0m 0s 184ms
+Time for merging to step-0-DB: 0h 0m 0s 238ms
+Database type: Aminoacid
+Time for processing: 0h 0m 1s 449ms
+cluster /beegfs/scratch/2467315/rtn28/step-0/step-0-DB /beegfs/scratch/2467315/rtn28/step-0/step-0-DB_clu /beegfs/scratch/2467315/rtn28/step-0/tmp/ 
+
+MMseqs Version:                     	13.45111
+Substitution matrix                 	nucl:nucleotide.out,aa:blosum62.out
+Seed substitution matrix            	nucl:nucleotide.out,aa:VTML80.out
+Sensitivity                         	4
+k-mer length                        	0
+k-score                             	2147483647
+Alphabet size                       	nucl:5,aa:21
+Max sequence length                 	65535
+Max results per query               	20
+Split database                      	0
+Split mode                          	2
+Split memory limit                  	0
+Coverage threshold                  	0.8
+Coverage mode                       	0
+Compositional bias                  	1
+Diagonal scoring                    	true
+Exact k-mer matching                	0
+Mask residues                       	1
+Mask lower case residues            	0
+Minimum diagonal score              	15
+Include identical seq. id.          	false
+Spaced k-mers                       	1
+Preload mode                        	0
+Pseudo count a                      	1
+Pseudo count b                      	1.5
+Spaced k-mer pattern                	
+Local temporary path                	
+Threads                             	48
+Compressed                          	0
+Verbosity                           	3
+Add backtrace                       	false
+Alignment mode                      	3
+Alignment mode                      	0
+Allow wrapped scoring               	false
+E-value threshold                   	0.001
+Seq. id. threshold                  	0
+Min alignment length                	0
+Seq. id. mode                       	0
+Alternative alignments              	0
+Max reject                          	2147483647
+Max accept                          	2147483647
+Score bias                          	0
+Realign hits                        	false
+Realign score bias                  	-0.2
+Realign max seqs                    	2147483647
+Gap open cost                       	nucl:5,aa:11
+Gap extension cost                  	nucl:2,aa:1
+Zdrop                               	40
+Rescore mode                        	0
+Remove hits by seq. id. and coverage	false
+Sort results                        	0
+Cluster mode                        	0
+Max connected component depth       	1000
+Similarity type                     	2
+Single step clustering              	false
+Cascaded clustering steps           	3
+Cluster reassign                    	false
+Remove temporary files              	false
+Force restart with latest tmp       	false
+MPI runner                          	
+k-mers per sequence                 	21
+Scale k-mers per sequence           	nucl:0.200,aa:0.000
+Adjust k-mer length                 	false
+Shift hash                          	67
+Include only extendable             	false
+Skip repeating k-mers               	false
+
+Set cluster sensitivity to -s 6.000000
+Set cluster mode SET COVER
+Set cluster iterations to 3
+linclust /beegfs/scratch/2467315/rtn28/step-0/step-0-DB /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/clu_redundancy /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust --cluster-mode 0 --max-iterations 1000 --similarity-type 2 --threads 48 --compressed 0 -v 3 --sub-mat nucl:nucleotide.out,aa:blosum62.out -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.8 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca 1 --pcb 1.5 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --gap-open nucl:5,aa:11 --gap-extend nucl:2,aa:1 --zdrop 40 --alph-size nucl:5,aa:13 --kmer-per-seq 21 --spaced-kmer-mode 1 --kmer-per-seq-scale nucl:0.200,aa:0.000 --adjust-kmer-len 0 --mask 0 --mask-lower-case 0 -k 0 --hash-shift 67 --split-memory-limit 0 --include-only-extendable 0 --ignore-multi-kmer 0 --rescore-mode 0 --filter-hits 0 --sort-results 0 --remove-tmp-files 0 --force-reuse 0 
+
+kmermatcher /beegfs/scratch/2467315/rtn28/step-0/step-0-DB /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/pref --sub-mat nucl:nucleotide.out,aa:blosum62.out --alph-size nucl:5,aa:13 --min-seq-id 0 --kmer-per-seq 21 --spaced-kmer-mode 1 --kmer-per-seq-scale nucl:0.200,aa:0.000 --adjust-kmer-len 0 --mask 0 --mask-lower-case 0 --cov-mode 0 -k 0 -c 0.8 --max-seq-len 65535 --hash-shift 67 --split-memory-limit 0 --include-only-extendable 0 --ignore-multi-kmer 0 --threads 48 --compressed 0 -v 3 
+
+kmermatcher /beegfs/scratch/2467315/rtn28/step-0/step-0-DB /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/pref --sub-mat nucl:nucleotide.out,aa:blosum62.out --alph-size nucl:5,aa:13 --min-seq-id 0 --kmer-per-seq 21 --spaced-kmer-mode 1 --kmer-per-seq-scale nucl:0.200,aa:0.000 --adjust-kmer-len 0 --mask 0 --mask-lower-case 0 --cov-mode 0 -k 0 -c 0.8 --max-seq-len 65535 --hash-shift 67 --split-memory-limit 0 --include-only-extendable 0 --ignore-multi-kmer 0 --threads 48 --compressed 0 -v 3 
+
+Database size: 302566 type: Aminoacid
+Reduced amino acid alphabet: (A S T) (C) (D B N) (E Q Z) (F Y) (G) (H) (I V) (K R) (L J M) (P) (W) (X) 
+
+Generate k-mers list for 1 split
+[=================================================================] 302.57K 2s 772ms
+Sort kmer 0h 0m 1s 172ms
+Sort by rep. sequence 0h 0m 0s 708ms
+Time for fill: 0h 0m 0s 48ms
+Time for merging to pref: 0h 0m 0s 1ms
+Time for processing: 0h 0m 4s 915ms
+rescorediagonal /beegfs/scratch/2467315/rtn28/step-0/step-0-DB /beegfs/scratch/2467315/rtn28/step-0/step-0-DB /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/pref /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/pref_rescore1 --sub-mat nucl:nucleotide.out,aa:blosum62.out --rescore-mode 0 --wrapped-scoring 0 --filter-hits 0 -e 0.001 -c 0.8 -a 0 --cov-mode 0 --min-seq-id 0.5 --min-aln-len 0 --seq-id-mode 0 --add-self-matches 0 --sort-results 0 --db-load-mode 0 --threads 48 --compressed 0 -v 3 
+
+[=================================================================] 302.57K 0s 475ms
+Time for merging to pref_rescore1: 0h 0m 0s 279ms
+Time for processing: 0h 0m 1s 20ms
+clust /beegfs/scratch/2467315/rtn28/step-0/step-0-DB /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/pref_rescore1 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/pre_clust --cluster-mode 0 --max-iterations 1000 --similarity-type 2 --threads 48 --compressed 0 -v 3 
+
+Clustering mode: Set Cover
+[=================================================================] 302.57K 0s 167ms
+Sort entries
+Find missing connections
+Found 650074 new connections.
+Reconstruct initial order
+[=================================================================] 302.57K 0s 199ms
+Add missing connections
+[=================================================================] 302.57K 0s 14ms
+
+Time for read in: 0h 0m 0s 521ms
+Total time: 0h 0m 0s 804ms
+
+Size of the sequence database: 302566
+Size of the alignment database: 302566
+Number of clusters: 24628
+
+Writing results 0h 0m 0s 9ms
+Time for merging to pre_clust: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 982ms
+createsubdb /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/order_redundancy /beegfs/scratch/2467315/rtn28/step-0/step-0-DB /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/input_step_redundancy -v 3 --subdb-mode 1 
+
+Time for merging to input_step_redundancy: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 29ms
+createsubdb /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/order_redundancy /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/pref /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/pref_filter1 -v 3 --subdb-mode 1 
+
+Time for merging to pref_filter1: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 58ms
+filterdb /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/pref_filter1 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/pref_filter2 --filter-file /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/order_redundancy --threads 48 --compressed 0 -v 3 
+
+Filtering using file(s)
+[=================================================================] 24.63K 0s 65ms
+Time for merging to pref_filter2: 0h 0m 0s 48ms
+Time for processing: 0h 0m 0s 219ms
+rescorediagonal /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/input_step_redundancy /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/input_step_redundancy /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/pref_filter2 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/pref_rescore2 --sub-mat nucl:nucleotide.out,aa:blosum62.out --rescore-mode 1 --wrapped-scoring 0 --filter-hits 1 -e 0.001 -c 0.8 -a 0 --cov-mode 0 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --add-self-matches 0 --sort-results 0 --db-load-mode 0 --threads 48 --compressed 0 -v 3 
+
+Can not find any score per column for coverage 0.800000 and sequence identity 0.000000. No hit will be filtered.
+[=================================================================] 24.63K 0s 28ms
+Time for merging to pref_rescore2: 0h 0m 0s 51ms
+Time for processing: 0h 0m 0s 216ms
+align /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/input_step_redundancy /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/input_step_redundancy /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/pref_rescore2 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/aln --sub-mat nucl:nucleotide.out,aa:blosum62.out -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.8 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca 1 --pcb 1.5 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --gap-open nucl:5,aa:11 --gap-extend nucl:2,aa:1 --zdrop 40 --threads 48 --compressed 0 -v 3 
+
+Compute score, coverage and sequence identity
+Query database size: 24628 type: Aminoacid
+Target database size: 24628 type: Aminoacid
+Calculation of alignments
+[=================================================================] 24.63K 1s 442ms
+Time for merging to aln: 0h 0m 0s 52ms
+28774 alignments calculated
+28464 sequence pairs passed the thresholds (0.989226 of overall calculated)
+1.155758 hits per query sequence
+Time for processing: 0h 0m 1s 633ms
+clust /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/input_step_redundancy /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/aln /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/clust --cluster-mode 0 --max-iterations 1000 --similarity-type 2 --threads 48 --compressed 0 -v 3 
+
+Clustering mode: Set Cover
+[=================================================================] 24.63K 0s 7ms
+Sort entries
+Find missing connections
+Found 3836 new connections.
+Reconstruct initial order
+[=================================================================] 24.63K 0s 9ms
+Add missing connections
+[=================================================================] 24.63K 0s 0ms
+
+Time for read in: 0h 0m 0s 54ms
+Total time: 0h 0m 0s 96ms
+
+Size of the sequence database: 24628
+Size of the alignment database: 24628
+Number of clusters: 21691
+
+Writing results 0h 0m 0s 2ms
+Time for merging to clust: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 121ms
+mergeclusters /beegfs/scratch/2467315/rtn28/step-0/step-0-DB /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/clu_redundancy /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/pre_clust /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/linclust/8247522211170804504/clust --threads 48 --compressed 0 -v 3 
+
+Clustering step 1
+[=================================================================] 24.63K 0s 59ms
+Clustering step 2
+[=================================================================] 21.69K 0s 71ms
+Write merged clustering
+[=================================================================] 302.57K 0s 132ms
+Time for merging to clu_redundancy: 0h 0m 0s 43ms
+Time for processing: 0h 0m 0s 234ms
+createsubdb /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/clu_redundancy /beegfs/scratch/2467315/rtn28/step-0/step-0-DB /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step_redundancy -v 3 --subdb-mode 1 
+
+Time for merging to input_step_redundancy: 0h 0m 0s 1ms
+Time for processing: 0h 0m 0s 32ms
+prefilter /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step_redundancy /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step_redundancy /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/pref_step0 --sub-mat nucl:nucleotide.out,aa:blosum62.out --seed-sub-mat nucl:nucleotide.out,aa:VTML80.out -s 1 -k 0 --k-score 2147483647 --alph-size nucl:5,aa:21 --max-seq-len 65535 --max-seqs 20 --split 0 --split-mode 2 --split-memory-limit 0 -c 0.8 --cov-mode 0 --comp-bias-corr 0 --diag-score 0 --exact-kmer-matching 0 --mask 1 --mask-lower-case 0 --min-ungapped-score 0 --add-self-matches 0 --spaced-kmer-mode 1 --db-load-mode 0 --pca 1 --pcb 1.5 --threads 48 --compressed 0 -v 3 
+
+Query database size: 21691 type: Aminoacid
+Estimated memory consumption: 1G
+Target database size: 21691 type: Aminoacid
+Index table k-mer threshold: 154 at k-mer size 6 
+Index table: counting k-mers
+[=================================================================] 21.69K 0s 589ms
+Index table: Masked residues: 16982
+Index table: fill
+[=================================================================] 21.69K 0s 317ms
+Index statistics
+Entries:          1799577
+DB size:          498 MB
+Avg k-mer size:   0.028118
+Top 10 k-mers
+    YWQTTV	108
+    FTSDKN	84
+    DYGGVT	68
+    RQPKEW	63
+    TIRNNT	53
+    LKETYY	51
+    LRETYY	48
+    FDYKGV	31
+    SCAGFT	29
+    EFETDR	26
+Time for index table init: 0h 0m 1s 295ms
+Process prefiltering step 1 of 1
+
+k-mer similarity threshold: 154
+Starting prefiltering scores calculation (step 1 of 1)
+Query db start 1 to 21691
+Target db start 1 to 21691
+[=================================================================] 21.69K 0s 736ms
+
+2.091344 k-mers per position
+120 DB matches per sequence
+0 overflows
+0 queries produce too many hits (truncated result)
+2 sequences passed prefiltering per query sequence
+2 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref_step0: 0h 0m 0s 49ms
+Time for processing: 0h 0m 4s 356ms
+align /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step_redundancy /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step_redundancy /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/pref_step0 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/aln_step0 --sub-mat nucl:nucleotide.out,aa:blosum62.out -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.8 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 0 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca 1 --pcb 1.5 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --gap-open nucl:5,aa:11 --gap-extend nucl:2,aa:1 --zdrop 40 --threads 48 --compressed 0 -v 3 
+
+Compute score, coverage and sequence identity
+Query database size: 21691 type: Aminoacid
+Target database size: 21691 type: Aminoacid
+Calculation of alignments
+[=================================================================] 21.69K 4s 479ms
+Time for merging to aln_step0: 0h 0m 0s 56ms
+58568 alignments calculated
+55724 sequence pairs passed the thresholds (0.951441 of overall calculated)
+2.568992 hits per query sequence
+Time for processing: 0h 0m 4s 650ms
+clust /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step_redundancy /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/aln_step0 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/clu_step0 --cluster-mode 0 --max-iterations 1000 --similarity-type 2 --threads 48 --compressed 0 -v 3 
+
+Clustering mode: Set Cover
+[=================================================================] 21.69K 0s 10ms
+Sort entries
+Find missing connections
+Found 3303 new connections.
+Reconstruct initial order
+[=================================================================] 21.69K 0s 15ms
+Add missing connections
+[=================================================================] 21.69K 0s 1ms
+
+Time for read in: 0h 0m 0s 68ms
+Total time: 0h 0m 0s 138ms
+
+Size of the sequence database: 21691
+Size of the alignment database: 21691
+Number of clusters: 15233
+
+Writing results 0h 0m 0s 1ms
+Time for merging to clu_step0: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 161ms
+createsubdb /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/clu_step0 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step_redundancy /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step1 -v 3 --subdb-mode 1 
+
+Time for merging to input_step1: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 21ms
+prefilter /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step1 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step1 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/pref_step1 --sub-mat nucl:nucleotide.out,aa:blosum62.out --seed-sub-mat nucl:nucleotide.out,aa:VTML80.out -s 3.5 -k 0 --k-score 2147483647 --alph-size nucl:5,aa:21 --max-seq-len 65535 --max-seqs 20 --split 0 --split-mode 2 --split-memory-limit 0 -c 0.8 --cov-mode 0 --comp-bias-corr 1 --diag-score 1 --exact-kmer-matching 0 --mask 1 --mask-lower-case 0 --min-ungapped-score 15 --add-self-matches 0 --spaced-kmer-mode 1 --db-load-mode 0 --pca 1 --pcb 1.5 --threads 48 --compressed 0 -v 3 
+
+Query database size: 15233 type: Aminoacid
+Estimated memory consumption: 1G
+Target database size: 15233 type: Aminoacid
+Index table k-mer threshold: 131 at k-mer size 6 
+Index table: counting k-mers
+[=================================================================] 15.23K 0s 485ms
+Index table: Masked residues: 14573
+Index table: fill
+[=================================================================] 15.23K 0s 410ms
+Index statistics
+Entries:          2401881
+DB size:          502 MB
+Avg k-mer size:   0.037529
+Top 10 k-mers
+    IGAALA	15
+    GRDLNA	13
+    YWQTTV	12
+    GQTVSS	11
+    QLEGLV	10
+    SGPRGS	9
+    VQGSLS	9
+    VRAGLE	8
+    AAEAAG	8
+    SGGVGG	8
+Time for index table init: 0h 0m 1s 290ms
+Process prefiltering step 1 of 1
+
+k-mer similarity threshold: 131
+Starting prefiltering scores calculation (step 1 of 1)
+Query db start 1 to 15233
+Target db start 1 to 15233
+[=================================================================] 15.23K 4s 411ms
+
+41.667858 k-mers per position
+379 DB matches per sequence
+0 overflows
+0 queries produce too many hits (truncated result)
+3 sequences passed prefiltering per query sequence
+3 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref_step1: 0h 0m 0s 39ms
+Time for processing: 0h 0m 8s 36ms
+align /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step1 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step1 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/pref_step1 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/aln_step1 --sub-mat nucl:nucleotide.out,aa:blosum62.out -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.8 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca 1 --pcb 1.5 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --gap-open nucl:5,aa:11 --gap-extend nucl:2,aa:1 --zdrop 40 --threads 48 --compressed 0 -v 3 
+
+Compute score, coverage and sequence identity
+Query database size: 15233 type: Aminoacid
+Target database size: 15233 type: Aminoacid
+Calculation of alignments
+[=================================================================] 15.23K 1s 985ms
+Time for merging to aln_step1: 0h 0m 0s 36ms
+37227 alignments calculated
+27185 sequence pairs passed the thresholds (0.730250 of overall calculated)
+1.784612 hits per query sequence
+Time for processing: 0h 0m 2s 100ms
+clust /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step1 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/aln_step1 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/clu_step1 --cluster-mode 0 --max-iterations 1000 --similarity-type 2 --threads 48 --compressed 0 -v 3 
+
+Clustering mode: Set Cover
+[=================================================================] 15.23K 0s 5ms
+Sort entries
+Find missing connections
+Found 1850 new connections.
+Reconstruct initial order
+[=================================================================] 15.23K 0s 8ms
+Add missing connections
+[=================================================================] 15.23K 0s 0ms
+
+Time for read in: 0h 0m 0s 45ms
+Total time: 0h 0m 0s 62ms
+
+Size of the sequence database: 15233
+Size of the alignment database: 15233
+Number of clusters: 11403
+
+Writing results 0h 0m 0s 1ms
+Time for merging to clu_step1: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 80ms
+createsubdb /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/clu_step1 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step1 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step2 -v 3 --subdb-mode 1 
+
+Time for merging to input_step2: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 12ms
+prefilter /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step2 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step2 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/pref_step2 --sub-mat nucl:nucleotide.out,aa:blosum62.out --seed-sub-mat nucl:nucleotide.out,aa:VTML80.out -s 6 -k 0 --k-score 2147483647 --alph-size nucl:5,aa:21 --max-seq-len 65535 --max-seqs 20 --split 0 --split-mode 2 --split-memory-limit 0 -c 0.8 --cov-mode 0 --comp-bias-corr 1 --diag-score 1 --exact-kmer-matching 0 --mask 1 --mask-lower-case 0 --min-ungapped-score 15 --add-self-matches 0 --spaced-kmer-mode 1 --db-load-mode 0 --pca 1 --pcb 1.5 --threads 48 --compressed 0 -v 3 
+
+Query database size: 11403 type: Aminoacid
+Estimated memory consumption: 1015M
+Target database size: 11403 type: Aminoacid
+Index table k-mer threshold: 109 at k-mer size 6 
+Index table: counting k-mers
+[=================================================================] 11.40K 0s 361ms
+Index table: Masked residues: 10528
+Index table: fill
+[=================================================================] 11.40K 0s 281ms
+Index statistics
+Entries:          1771113
+DB size:          498 MB
+Avg k-mer size:   0.027674
+Top 10 k-mers
+    AAAAAG	7
+    GGTLAA	6
+    AALAEA	6
+    VEAAKA	6
+    ADLAKA	6
+    AEAALA	6
+    ALARLE	6
+    GKVVRE	6
+    QLELAG	6
+    LCLALG	6
+Time for index table init: 0h 0m 1s 30ms
+Process prefiltering step 1 of 1
+
+k-mer similarity threshold: 109
+Starting prefiltering scores calculation (step 1 of 1)
+Query db start 1 to 11403
+Target db start 1 to 11403
+[=================================================================] 11.40K 22s 96ms
+
+454.241455 k-mers per position
+2193 DB matches per sequence
+0 overflows
+0 queries produce too many hits (truncated result)
+15 sequences passed prefiltering per query sequence
+19 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref_step2: 0h 0m 0s 49ms
+Time for processing: 0h 0m 25s 506ms
+align /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step2 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step2 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/pref_step2 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/aln_step2 --sub-mat nucl:nucleotide.out,aa:blosum62.out -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.8 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca 1 --pcb 1.5 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --gap-open nucl:5,aa:11 --gap-extend nucl:2,aa:1 --zdrop 40 --threads 48 --compressed 0 -v 3 
+
+Compute score, coverage and sequence identity
+Query database size: 11403 type: Aminoacid
+Target database size: 11403 type: Aminoacid
+Calculation of alignments
+[=================================================================] 11.40K 1s 240ms
+Time for merging to aln_step2: 0h 0m 0s 40ms
+58743 alignments calculated
+15863 sequence pairs passed the thresholds (0.270041 of overall calculated)
+1.391125 hits per query sequence
+Time for processing: 0h 0m 1s 397ms
+clust /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/input_step2 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/aln_step2 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/clu_step2 --cluster-mode 0 --max-iterations 1000 --similarity-type 2 --threads 48 --compressed 0 -v 3 
+
+Clustering mode: Set Cover
+[=================================================================] 11.40K 0s 3ms
+Sort entries
+Find missing connections
+Found 844 new connections.
+Reconstruct initial order
+[=================================================================] 11.40K 0s 4ms
+Add missing connections
+[=================================================================] 11.40K 0s 0ms
+
+Time for read in: 0h 0m 0s 44ms
+Total time: 0h 0m 0s 69ms
+
+Size of the sequence database: 11403
+Size of the alignment database: 11403
+Number of clusters: 9538
+
+Writing results 0h 0m 0s 1ms
+Time for merging to clu_step2: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 88ms
+mergeclusters /beegfs/scratch/2467315/rtn28/step-0/step-0-DB /beegfs/scratch/2467315/rtn28/step-0/step-0-DB_clu /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/clu_redundancy /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/clu_step0 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/clu_step1 /beegfs/scratch/2467315/rtn28/step-0/tmp//11142638822216777962/clu_step2 --threads 48 --compressed 0 -v 3 
+
+Clustering step 1
+[=================================================================] 21.69K 0s 59ms
+Clustering step 2
+[=================================================================] 15.23K 0s 71ms
+Clustering step 3
+[=================================================================] 11.40K 0s 80ms
+Clustering step 4
+[=================================================================] 9.54K 0s 88ms
+Write merged clustering
+[=================================================================] 302.57K 0s 132ms
+Time for merging to step-0-DB_clu: 0h 0m 0s 30ms
+Time for processing: 0h 0m 0s 228ms
+createtsv /beegfs/scratch/2467315/rtn28/step-0/step-0-DB /beegfs/scratch/2467315/rtn28/step-0/step-0-DB /beegfs/scratch/2467315/rtn28/step-0/step-0-DB_clu /beegfs/scratch/2467315/rtn28/step-0.tsv 
+
+MMseqs Version:                 	13.45111
+First sequence as representative	false
+Target column                   	1
+Add full header                 	false
+Sequence source                 	0
+Database output                 	false
+Threads                         	48
+Compressed                      	0
+Verbosity                       	3
+
+Time for merging to step-0.tsv: 0h 0m 0s 60ms
+Time for processing: 0h 0m 0s 294ms
+
+
+Times:Initial DB: 1s.
+Initial clustering: 56s.
+Output conversion: 1s.
+Full time: 58s.
+
+
