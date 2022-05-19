@@ -11,7 +11,7 @@ Complet+ was developed with the following software:
 - MMseqs2=Release 13-45111
 
 ## Data requirement
-1. clusterResults.tsv example
+1. clusterResults.tsv
 
 The clustering results file format requires that each cluster have a representative sequence.
 
