@@ -47,8 +47,8 @@ The required arguments are the clustering results file that the user wishes to r
 completplus.sh <i:clusterResults.tsv> <i:sequences.fasta> <o:newClusteringResults.tsv> [options]
 ```
 
-Below is an example of running Complet+ with a MMseqs2 search sensitivity of 1, singlethreaded:
+For example, let's say we have a clustering results file called ***defaultClusters.tsv***, a FASTA file called ***allSeqs.fasta***, and we would like the resultant file to be called ***completClusters.tsv***. To run Complet+ with using a MMseqs2 ***search sensitivity of 1*** and an ***e-value threshold of 0.1***, the command would look like the following:
 
 ```
-completplus.sh defaultClusters.tsv allSeqs.fasta completPClusters.tsv "-s 7.5 --threads 1"
+completplus.sh defaultClusters.tsv allSeqs.fasta completClusters.tsv "-s 7.5 -e 0.1"
 ```
