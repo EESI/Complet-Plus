@@ -20,6 +20,6 @@ The clustering results file after running Complet+. The first two columns are id
 
 Contains files created by the MMseqs2 cluster pipeline, in addition to a subfolder (*/complet*) that contains files created by the Complet+ pipeline.
 
-### /complet
+### /step-0/complet
 
 Contains files created by the Complet+ pipeline, in addition to a subfolder (*/mmseqs-output*) that contains files created by the *MMseqs2 search* done by Complet+ during its process.
