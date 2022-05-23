@@ -1,8 +1,11 @@
 # Complet-Plus: A Computationally Scalable Method to Improve Completeness of Large-Scale Protein Sequence Clustering
 
 *Complet+* is a post-processing tool that merges clustering results using MMseqs2's *search* module. It is intended for useage with MMseqs2 clustering results, but can be run on any clustering results that is in a similar format.
+
 Drexel University EESI Lab, 2022
+
 Maintainer: Rachel Nguyen, rtn28 at dragons dot drexel dot edu
+
 Owner: Gail Rosen, gailr at ece dot drexel dot edu
 
 ## Dependencies
