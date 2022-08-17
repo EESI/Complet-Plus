@@ -10,6 +10,7 @@
 CLU_F=$1
 SEQ_F=$2
 OUT_F=$3
+SEARCH_OPTIONS=$4
 
 ROOT_DIR=$(pwd)
 
@@ -24,7 +25,11 @@ mkdir mmseqs-output
 mkdir mmseqs-output/tmp
 
 # Extracting the sequence information of the representative sequences from the .csv data.
-grep -f <(awk '{print $1}' $CLU_F | sort | uniq) -A1 --no-group-separator $SEQ_F > rep-seqs.fasta
+## Note: the line following this one (that is commented out) is faster than the one following it, however not all versions 
+## of grep support the --no-group-separator option. If the user's version of grep does support it, I suggest using the 
+## first version for faster performance.
+## grep -f <(awk '{print $1}' $CLU_F | sort | uniq) -A1 --no-group-separator $SEQ_F > rep-seqs.fasta
+grep -f <(awk '{print $1}' $CLU_F | sort | uniq) -A1 $SEQ_F | grep -v -- "^--$" > rep-seqs.fasta
 
 
 # Making the databases.
@@ -41,9 +46,9 @@ sort -k11 -g -o search.tsv search.tsv
 
 
 # Finding RBs.
-python ../../find_RHs.py $ROOT_DIR "search.tsv" "searchRHs.tsv" $SEARCH_EVAL_THRESHOLD
+python find_RHs.py $ROOT_DIR "search.tsv" "searchRHs.tsv"
 
 
 # Relabeling cluster results accordingly.
-python ../../relabel_seqs.py $ROOT_DIR $CLU_F "searchRHs.tsv" $OUT_F
+python relabel_seqs.py $ROOT_DIR $CLU_F "searchRHs.tsv" $OUT_F
 

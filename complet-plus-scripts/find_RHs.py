@@ -3,7 +3,7 @@ import csv
 from collections import defaultdict
 
 # Passes through the alignment file once, and returns a 2D list of the alignment & a dictionary of each query and its hits.
-def parse_alignment(file_dir, eval_threshold, delim='\t'):
+def parse_alignment(file_dir, delim='\t'):
     hits = []
     hits_dict = defaultdict(list)
 
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     search_dir = root_dir + "/" + sys.argv[2]
     output_f = root_dir + "/" + sys.argv[3]
 
-    hit_list, hit_dict = parse_alignment(search_dir, sys.argv[4])
+    hit_list, hit_dict = parse_alignment(search_dir)
     RH_list = []
 
     # Passing through the list of alignments
