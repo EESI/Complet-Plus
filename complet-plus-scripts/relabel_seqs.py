@@ -75,9 +75,9 @@ def traverse_targets(data: dict, recruitments: dict, query: str, og_query: str, 
 
 if __name__ == "__main__":
     root_dir = sys.argv[1]                      # The working directory
-    old_f = root_dir + "/" + sys.argv[2]        # The filename of the old cluster results
+    old_f = sys.argv[2]        # The filename of the old cluster results
     RH_f = root_dir + "/" + sys.argv[3]         # The filename of find_RHs.py
-    new_f = root_dir + "/" + sys.argv[4]        # The output filename for the new cluster results
+    new_f = sys.argv[4]        # The output filename for the new cluster results
 
     # 2D list of the old cluster results.
     cluster_data = load_tsv(

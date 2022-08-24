@@ -21,7 +21,7 @@ def parse_alignment(file_dir, delim='\t'):
 # 4 = e-val threshold.
 if __name__ == "__main__":
     root_dir = sys.argv[1]                                  # The path of the working directory
-    search_dir = root_dir + "/" + sys.argv[2]
+    search_dir = sys.argv[2]
     output_f = root_dir + "/" + sys.argv[3]
 
     hit_list, hit_dict = parse_alignment(search_dir)
