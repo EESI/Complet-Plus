@@ -54,7 +54,23 @@ while [ "${1:-}" != "" ]; do
 			;;
         "-h" | "--help")
 			shift 1
-			printf "Completplus\n\tThere are three mandatory flags -c -s and -o.\n\tThese flags specify the cluster results file (csv/tsv), sequence file (fasta) and the resultant output file.\n\nOptional flags:\n\t-t\tSpecify a path to create a temp output folder for generated files.\n\t\tIf none is specified, this will default to the current working directory.\n\t-h\tHelp for options. --help can also be supplied.\n\t-O\tSpecify search options for mmseqs as a string, --opt can also be supplied.\n\t\tExample: completplus <...> -O \"-e 0.01 -s 7.5\"\n"
+			printf "Complet-Plus usage:
+
+Example on helper scripts: 
+bash completplus.sh -s complet-plus-scripts/example-input-files/step-0.fasta -c complet-plus-scripts/example-input-files/step-0.tsv -o step-1.tsv
+        
+Mandatory flags:
+	-c		The input cluster results file (in mmseqs2 cluster results format)
+	-s		The input sequence file (FASTA format)
+	-o		The output file of the updated cluster results
+
+
+Optional flags:
+    	-t      	Specify a path to create a temp output folder for generated files.
+            		If none is specified, this will default to the current working directory.
+    	-h      	Help for options. --help can also be supplied.
+    	-O      	Specify search options for mmseqs as a string, --opt can also be supplied.
+            		Example: completplus <...> -O \"-e 0.01 -s 7.5\"\n"
 			exit 1
 			;;
 		"-t")
