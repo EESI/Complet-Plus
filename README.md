@@ -71,7 +71,7 @@ The Python script run by ***completplus.sh*** to filter the sequence alingment d
 
 The Python script run by ***completplus.sh*** to relabel the sequences using the reciprocal hits from the sequence alignment. Not intended for user use.
 
-## Docker info
+## Running the Docker in Singularity  (Example of using the Docker)
 
 singularity pull docker://ynevn/completplus:amd
 
