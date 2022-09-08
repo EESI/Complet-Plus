@@ -73,7 +73,9 @@ The Python script run by ***completplus.sh*** to relabel the sequences using the
 
 ## Running the Docker in Singularity  (Example of using the Docker)
 
+```
 singularity pull docker://eesilab/complet-plus:amd
+```
 
-To run example (where you want to output tempdir and output in current directory): singularity exec -B $PWD:/data completplus_amd.sif bash completplus.sh -c /opt/complet-plus-scripts/example_input_files/step-0.tsv -s /opt/complet-plus-scripts/example_input_files/step-0.fasta -o /data/step-1.tsv
+To run example (where you want to output tempdir and output in current directory): ``` singularity exec -B $PWD:/data completplus_amd.sif bash completplus.sh -c /opt/complet-plus-scripts/example_input_files/step-0.tsv -s /opt/complet-plus-scripts/example_input_files/step-0.fasta -o /data/step-1.tsv ```
 
