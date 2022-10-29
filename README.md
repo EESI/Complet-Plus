@@ -40,6 +40,10 @@ tsadkshvrsiwskaggsaeeigaealgrmlesf
 wskaggsaeeigaealgrmle
 ...
 ```
+Output format
+
+There are 3 columns: Old Cluster ID, Sequence ID, Complet+ Cluster ID
+
 
 ## Tutorial
 
